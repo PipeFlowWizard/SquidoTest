@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceClip: {fileID: 6960518281812736383}
-  grabbable: {fileID: 0}
+  grabbable: {fileID: 3794906147583080744}
   trail: {fileID: 8094914546090994137}
   rigidbody: {fileID: 2385616562066148963}
 --- !u!82 &6960518281812736383

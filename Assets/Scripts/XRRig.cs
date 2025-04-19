@@ -12,7 +12,7 @@ public class XRRig : MonoBehaviour
 	[Header("Movement Parameters")]
 	public float speed = 1;
 	public float rotationalSpeed = 1;
-	
+	public LayerMask layerMask;
 	private Vector3 _displacement;
 	private Vector3 _lastPosition;
 
@@ -46,9 +46,13 @@ public class XRRig : MonoBehaviour
 		right.Normalize();
 
 		Vector3 step = (forward * directionalInput.y + right * directionalInput.x).normalized;
+		step *= speed * Time.fixedDeltaTime;
+		Vector3 startPos = transform.position + Vector3.up;
+		if(!Physics.Linecast(startPos, startPos + 2 * step, layerMask))
+		{
+			_rigidbody.MovePosition(transform.position + step);
+		}
 		
-		
-		_rigidbody.MovePosition(transform.position + step * (speed * Time.fixedDeltaTime));
 		Quaternion rot = Quaternion.AngleAxis(rightHand.input.thumbstick.x * rotationalSpeed * Time.fixedDeltaTime, Vector3.up);
 		_rigidbody.MoveRotation(rot * transform.rotation);
 	}

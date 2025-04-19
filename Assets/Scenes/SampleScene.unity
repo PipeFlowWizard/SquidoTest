@@ -481,6 +481,16 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2385616562066148963, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794906147583080744, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: attenuation
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4876084369647471482, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2777,6 +2787,16 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2385616562066148963, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794906147583080744, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: attenuation
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4876084369647471482, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3073,7 +3093,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 64859cf955a5fb047880af754183e463, type: 2}
+  - {fileID: 2100000, guid: 654f880e6c53344418cffdff34e23659, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3322,6 +3342,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AngularDrag
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2385616562066148963, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794906147583080744, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: attenuation
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4876084369647471482, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
         type: 3}
@@ -4439,6 +4469,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1805096505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1162593867 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8292530919666065532, guid: 9288943a8ac12124698d9672afb4d6ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 677498558801520214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1213840436
 GameObject:
   m_ObjectHideFlags: 0
@@ -4469,8 +4505,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855692, y: -0.00000004371139, z: -0.00000004371139,
     w: 1}
-  m_LocalPosition: {x: -1.977, y: 2.9, z: 0.003}
-  m_LocalScale: {x: 0.71799797, y: 0.036002573, z: 0.71799797}
+  m_LocalPosition: {x: -1.972, y: 2.869, z: 0.005}
+  m_LocalScale: {x: 0.7601444, y: 0.02, z: 0.75396967}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1492830718}
@@ -7149,6 +7185,16 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2385616562066148963, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794906147583080744, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: attenuation
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4876084369647471482, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7231,6 +7277,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AngularDrag
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2385616562066148963, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794906147583080744, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: attenuation
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4876084369647471482, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
         type: 3}
@@ -13106,6 +13162,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6531721056420940120, guid: 9288943a8ac12124698d9672afb4d6ad,
+        type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 1162593867}
+    - target: {fileID: 6531721056420940120, guid: 9288943a8ac12124698d9672afb4d6ad,
+        type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6882334609550376428, guid: 9288943a8ac12124698d9672afb4d6ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13161,6 +13227,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 8292530919666065532, guid: 9288943a8ac12124698d9672afb4d6ad,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292530919666065532, guid: 9288943a8ac12124698d9672afb4d6ad,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292530919666065532, guid: 9288943a8ac12124698d9672afb4d6ad,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13174,6 +13255,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2385616562066148963, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794906147583080744, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
+        type: 3}
+      propertyPath: attenuation
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4876084369647471482, guid: 17a0dda9dc0667b47aa6e9e672fcb62e,
         type: 3}
       propertyPath: m_LocalPosition.x

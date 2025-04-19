@@ -17,7 +17,10 @@ public class Grabbable : MonoBehaviour
     [SerializeField]
     private Rigidbody _rigidbody;
 
-   public void FixedUpdate()
+    [SerializeField]
+    private float attenuation = 0.0075f;
+
+    public void FixedUpdate()
     {
         if (isGrabbed)
         {
@@ -33,7 +36,7 @@ public class Grabbable : MonoBehaviour
 
             if (_rigidbody != null)
             {
-                _rigidbody.MovePosition(averageGrabPosition + grabbers[0].hand.rig._rigidbody.velocity);
+                _rigidbody.MovePosition(averageGrabPosition);
             }
         }
 
@@ -49,6 +52,7 @@ public class Grabbable : MonoBehaviour
         if(isGrabbed && _rigidbody != null)
         {
             _rigidbody.useGravity = false;
+            _rigidbody.isKinematic = true;
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
             onGrab?.Invoke();
@@ -60,11 +64,12 @@ public class Grabbable : MonoBehaviour
         if(_rigidbody != null && grabbers.Count == 1)
         {
             _rigidbody.useGravity = true;
+            _rigidbody.isKinematic = false;
 
             var velocity = grabber.transform.parent.TransformVector(grabber.hand.input.velocity);
             var angularVelocity = grabber.transform.TransformVector(grabber.hand.input.angularVelocity);
             
-            var cross = Vector3.Cross( _displacement, angularVelocity) * 0.0075f;
+            var cross = Vector3.Cross( _displacement, angularVelocity) * attenuation;
             var intermediateVelocity = velocity + cross + grabber.hand.rig.displacement; 
             _rigidbody.velocity = intermediateVelocity * velocityCurve.Evaluate(intermediateVelocity.magnitude); 
             _rigidbody.angularVelocity = angularVelocity;
